@@ -1,18 +1,78 @@
-<!DOCTYPE html>
-
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Johanna Vikman</h1>
-      <nav>
-        <a href="index.html">HOME</a>
-        <a href="portfolio.html">PORTFOLIOOOO</a>
-      </nav>
-    </header>
+    <style>
+      .page-title {
+        margin-top: 1rem;
+        background-color: brown;
+        padding: 1rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: xx-large;
+        color: white;
+      }
 
-    <main></main>
+      .upper-title {
+        margin-left: 30%;
+      }
+
+      .lower-title {
+        margin-right: 30%;
+        text-align: right;
+      }
+      .nav-grid {
+        display: flex;
+        flex-direction: column;
+      }
+      .nav-grid-row {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .grid-box {
+        background-color: lightblue;
+        width: 100%;
+        height: 500px;
+        margin: 1rem;
+        text-align: center;
+        align-content: center;
+        border-radius: 0.5rem;
+        border: 2px solid gray;
+      }
+      .grid-box:active {
+        box-shadow: 5px 5px 5px 5px grey inset;
+        transition: all 1s ease-out;
+      }
+
+		.profile.pic {
+		width: 100%;
+        height: 500px;
+        margin: 1rem;
+        text-align: center;
+        align-content: center;
+		}
+	  
+
+    </style>
+  </head>
+
+  <body>
+    <div class="page-title upper-title">PORTFOLIO</div>
+    <div class="page-title lower-title">JOHANNA VIKMAN</div>
+
+    <div class="nav-grid">
+      <p>Detta är toppen på boxen</p>
+      <div class="nav-grid-row">
+        <div class="grid-box">Toppen vänster</div>
+        <div class="grid-box">
+			<div class="profile-pic">
+          <img src="images/9e0d351a36b205f704f91991ca1edba9.jpg" alt="" />
+        </div>
+        <div class="grid-box"></div>
+      </div>
+      <div class="nav-grid-row">
+        <div class="grid-box"></div>
+        <div class="grid-box"></div>
+        <div class="grid-box">Botten höger</div>
+      </div>
+    </div>
   </body>
 </html>
